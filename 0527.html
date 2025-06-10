@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let today = new Date();
+        const day = "일월화수목금토";
+        document.write(today+"<hr>");
+        document.write(today.getMonth()+1+"월");
+        document.write(today.getDate()+"일");
+        document.write(day[today.getDay()]+"요일");//2
+        document.write(today.getHours()+"시");
+        document.write(today.getMinutes()+"분");
+        let a = today.getHours();
+        if (a < 12) {
+            document.write("morning");
+        } else {
+            document.write("afternoon")
+        }
+
+    </script>
+</body>
+</html>

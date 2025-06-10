@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num =parseInt(prompt("숫자 입력:"));
+        if (num >=20){
+            document.write("치킨 두마리");
+        }else if (num >=10){
+            document.write("치킨 한마리");
+        }else{
+            document.write("쿠폰을 더 모으세요!");
+        }
+        </script>
+        <script>
+        let coupon = parseInt(prompt("패키지 번호를 입력하세요"));
+    document.write("패키지:" + coupon + "번<hr>");
+    switch (coupon) {
+        case 1:
+            document.write("돌고래쇼 ");
+        case 2:
+            document.write("놀이기구 10종");
+        case 3:
+            document.write("입장권");
+    }
+    </script>
+    <script>
+    let month = parseInt(prompt("월1~12를 입력하세요"));
+    document.write("입력한 월: " + month + "월<hr>");
+
+    switch (month) {
+        case 3:
+        case 4:
+        case 5:
+            document.write("봄입니다.");
+            break;
+        case 6:
+        case 7:
+        case 8:
+            document.write("여름입니다.");
+            break;
+        case 9:
+        case 10:
+        case 11:
+            document.write("가을입니다.");
+            break;
+        case 12:
+        case 1:
+        case 2:
+            document.write("겨울입니다.");
+            break;
+    }
+</script>
+<h2>while</h2>
+<script>
+    let i = 1;
+    while (i <5) {
+        document.write(i + "<img src='image/집.png'>");
+        i++;
+    }
+    for(let k = 1; k<5;k++){
+        document.write(i + "<img src='image/집.png'>");
+    }
+    </script>
+    <script>
+        let a = 1;
+        while (a <5) {
+            document.write(a + "<img src='image/집.png'>");
+            a++;
+        }
+        let num1 = parseInt(prompt("그림 몇번 출력하겠습니까?:"));
+
+        for(let k = 1; k<=num1;k++){
+            document.write( k + "<img src='image/집.png'>");
+        }
+        </script>
+
+    
+</body>
+</html>
