@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>간단한 JavaScript 예제</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+    #message {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="message">안녕하세요!</div>
+  <button onclick="changeMessage()">메시지 바꾸기</button>
+
+  <script>
+    function changeMessage() {
+      const message = document.getElementById("message");
+      message.innerText = "JavaScript가 동작했어요!";
+    }
+  </script>
+
+</body>
+</html>
