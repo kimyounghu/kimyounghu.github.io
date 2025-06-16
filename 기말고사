@@ -34,3 +34,36 @@
 
 </body>
 </html>
+
+두번째
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>간단한 태그와 자바스크립트</title>
+</head>
+<body>
+  <!-- 자바스크립트로 업데이트할 영역 -->
+  <div id="content">Hello, JavaScript!</div>
+  
+  <!-- 선택적으로 버튼을 추가하여 이벤트 리스너 적용 (확장 기능) -->
+  <button id="changeText">클릭하세요!</button>
+  
+  <script>
+    // id가 "content"인 요소를 가져옵니다.
+    const contentDiv = document.getElementById('content');
+    
+    // 페이지 로드 시 자바스크립트를 통해 내용을 변경합니다.
+    contentDiv.innerHTML = "자바스크립트가 내용을 업데이트 했습니다!";
+    
+    // id가 "changeText"인 버튼 요소를 가져옵니다.
+    const button = document.getElementById('changeText');
+    
+    // 버튼에 클릭 이벤트 리스너를 추가합니다.
+    button.addEventListener('click', function() {
+      // 버튼 클릭 시 div의 내용을 변경합니다.
+      contentDiv.innerHTML = "버튼이 클릭되었습니다!";
+    });
+  </script>
+</body>
+</html>
