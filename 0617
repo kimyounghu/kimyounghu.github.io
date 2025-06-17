@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>학번: 20211873</h1>
+    <h2>이름: 김영후</h2>
+    <Script>
+        let today = new Date();
+        document.write("시험시간: "+today.getHours()+"시");
+        document.write(today.getMinutes()+"분"); 
+    </Script>
+    <h3>1. 구구단</h3>
+    <Script>
+        parseInt(prompt("단 입력: "));
+        for(let i=0; i   ; i++){
+            document.write();
+        }
+    </Script>
+    <Script>
+        document.getElementById().innerHTML="HELLO";
+    </Script>
+</body>
+</html>
